@@ -1,0 +1,3 @@
+p_homepage:
+    pattern:  /
+    defaults: { _controller: PBundle:Homepage:index }

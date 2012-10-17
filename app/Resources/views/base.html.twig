@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+
+<!-- include styles -->
+        {% block stylesheets %}{% endblock %}
+        <link href="{{ asset('css/bootstrap-responsive.min.css') }}" type="text/css" rel="stylesheet" />
+        <link href="{{ asset('css/bootstrap.min.css') }}" type="text/css" rel="stylesheet" />
+        <link href="{{ asset('css/customdesign.css') }}" type="text/css" rel="stylesheet" />
+<!-- end -->
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+
+<!-- start body part -->
+        <header>{% block header %}{% endblock %}</header>
+
+        <div class="content">{% block body %}{% endblock %}</div>
+
+        <footer>{% block footer %}{% endblock %}</footer>
+<!-- end of body part -->
+
+<!-- scripts -->
+        {% block javascripts %}{% endblock %}
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/customscript.js') }}"></script>
+<!-- end scripts -->
+
+    </body>
+</html>
