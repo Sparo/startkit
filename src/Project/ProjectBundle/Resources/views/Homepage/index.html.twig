@@ -1,5 +1,8 @@
 {% extends 'PBundle::layout.html.twig' %}
 
+{% block user%}
+	{{ name | default }}!
+{% endblock %}
+
 {% block body %}
-	Hello {{ name | default }}!
 {% endblock %}

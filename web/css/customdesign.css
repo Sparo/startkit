@@ -1,3 +1,10 @@
-* {
-	padding: 1px;
-}
+.container-fluid {
+  margin-top: 1em;
+  display: table;
+  width: 100%; }
+  .container-fluid .pull-left {
+    font: 3em Arial;
+    padding: 0.2em; }
+  .container-fluid .pull-right {
+    padding: 0.2em;
+    text-align: right; }

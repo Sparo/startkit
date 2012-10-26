@@ -16,7 +16,15 @@
     <body>
 
 <!-- start body part -->
-        <header>{% block header %}{% endblock %}</header>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span9 pull-left">Startkit</div>
+<!--             </div>
+            <div class="row-fluid"> -->
+                <div class="span3 pull-right">Welcome{% block user%}{% endblock %}</div>
+            </div>
+        </div>
+        <hr>
 
         <div class="content">{% block body %}{% endblock %}</div>
 

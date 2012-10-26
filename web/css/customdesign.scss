@@ -1,0 +1,15 @@
+.container-fluid {
+
+	margin-top: 1em;
+	display: table;
+	width:100%;
+
+	.pull-left {
+		font: 3em Arial;
+		padding: 0.2em;
+	}
+	.pull-right {
+		padding: 0.2em;
+		text-align: right;
+	}
+}
