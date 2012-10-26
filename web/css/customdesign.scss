@@ -1,15 +1,42 @@
-.container-fluid {
 
+$blockpadding: .2em;
+
+@mixin borderstyle {
+	border: 1px solid lightgray;
+}
+
+// content style
+
+.headerblock {
 	margin-top: 1em;
 	display: table;
 	width:100%;
 
-	.pull-left {
+	.header-left-side {
 		font: 3em Arial;
-		padding: 0.2em;
+		padding: $blockpadding;
 	}
-	.pull-right {
-		padding: 0.2em;
+	.header-right-side {
+		padding: $blockpadding;
 		text-align: right;
+	}
+}
+
+.bodyblock {
+	.leftnav {
+		padding: $blockpadding;
+		@include borderstyle;
+	}
+	.contentblock {
+		padding: $blockpadding;
+		@include borderstyle;
+	}
+}
+
+.footerblock {
+	.copyright {
+		font: .8em Arial;
+		text-align: right;
+		font-style: italic;
 	}
 }

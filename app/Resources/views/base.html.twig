@@ -16,19 +16,32 @@
     <body>
 
 <!-- start body part -->
-        <div class="container-fluid">
+        <div class="container-fluid headerblock">
             <div class="row-fluid">
-                <div class="span9 pull-left">Startkit</div>
+                <div class="span9 pull-left header-left-side">Startkit</div>
 <!--             </div>
             <div class="row-fluid"> -->
-                <div class="span3 pull-right">Welcome{% block user%}{% endblock %}</div>
+                <div class="span3 pull-right header-right-side">Welcome{% block user%}{% endblock %}</div>
             </div>
         </div>
-        <hr>
+<hr>
 
-        <div class="content">{% block body %}{% endblock %}</div>
+        <div class="container-fluid bodyblock">
+            <div class="row-fluid">
+                <div class="span3 leftnav">here goes menu</div>
+                <div class="span8 contentblock">
+                    {% block content %} here goes content{% endblock %}
+                </div>
+            </div>
+        </div>
 
-        <footer>{% block footer %}{% endblock %}</footer>
+<hr>
+        <div class="container-fluid footerblock">
+            <div class="row">
+                <div class="span3 pull-right copyright"> KeepOnApps &copy; all rights reserved </div>
+                {% block footer %}{% endblock %}
+            </div>
+        </div>
 <!-- end of body part -->
 
 <!-- scripts -->

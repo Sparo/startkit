@@ -1,10 +1,22 @@
-.container-fluid {
+.headerblock {
   margin-top: 1em;
   display: table;
   width: 100%; }
-  .container-fluid .pull-left {
+  .headerblock .header-left-side {
     font: 3em Arial;
     padding: 0.2em; }
-  .container-fluid .pull-right {
+  .headerblock .header-right-side {
     padding: 0.2em;
     text-align: right; }
+
+.bodyblock .leftnav {
+  padding: 0.2em;
+  border: 1px solid lightgray; }
+.bodyblock .contentblock {
+  padding: 0.2em;
+  border: 1px solid lightgray; }
+
+.footerblock .copyright {
+  font: .8em Arial;
+  text-align: right;
+  font-style: italic; }
