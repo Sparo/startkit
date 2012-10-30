@@ -1,4 +1,3 @@
 p_homepage:
-    pattern:  /{name}
-    defaults: { _controller: PBundle:Homepage:index, name: false }
-
+    pattern:  /
+    defaults: { _controller: PBundle:Homepage:index}

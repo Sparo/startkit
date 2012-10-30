@@ -2,7 +2,7 @@ parameters:
     database_driver: pdo_mysql
     database_host: localhost
     database_port: null
-    database_name: symfony
+    database_name: startkitdatabase
     database_user: startkit
     database_password: 1start-3-kit7
     mailer_transport: smtp

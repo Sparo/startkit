@@ -1,6 +1,9 @@
 p:
     resource: "@PBundle/Resources/config/routing.yml"
     prefix:   /
+fos:
+    resource: "@UBundle/Resources/config/routing.yml"
+    prefix:   /
 
 # Internal routing configuration to handle ESI
 #_internal:

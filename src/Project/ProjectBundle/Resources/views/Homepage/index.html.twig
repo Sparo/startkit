@@ -1,5 +1,5 @@
 {% extends 'PBundle::layout.html.twig' %}
 
 {% block user%}
-	{{ name | default }}.
+	<a href="{{ path('fos_user_security_logout') }}">logout</a>
 {% endblock %}

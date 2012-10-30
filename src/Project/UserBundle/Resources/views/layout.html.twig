@@ -1,0 +1,10 @@
+{% extends '::base.html.twig' %}
+{# ako treba ubaciti nesto preko layout-a #}
+
+{% block fullcontent %}
+<div class="container-fluid bodyblock">
+	<div class="row-fluid">
+		{{ block ('fos_user_content') }}
+	</div>
+</div>
+{% endblock %}
