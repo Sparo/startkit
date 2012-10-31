@@ -1,3 +1,6 @@
 p_homepage:
     pattern:  /
     defaults: { _controller: PBundle:Homepage:index}
+p_homepage1:
+    pattern:  /blah
+    defaults: { _controller: PBundle:Homepage:blah}

@@ -8,17 +8,28 @@ class HomepageController extends Controller
 {
     public function indexAction()
     {
-    	// if($name) {
-	    //     return $this->render('PBundle:Homepage:index.html.twig', array('name' => $name));
-    	// } else return $this->render('PBundle:Homepage:index.html.twig');
+        $user = $this->container->get('security.context')->getToken()->getUser();
 
-    	$user = $this->container->get('fos_user.user_manager')->findUserByUsername('nenad');
+        // echo "<pre>";
+        // print_r($user);
+        // var_dump($user->getRoles());
+        // echo "</pre>";
 
-    	echo "<pre>";
-    	print_r($user);
-    	echo "</pre>";
-    	exit;
+        // exit;
 
-    	return $this->render('PBundle:Homepage:index.html.twig');
+
+
+
+        if ($user == 'anon.')
+            if (!is_object($user) || !$user instanceof UserInterface) {
+                return $this->redirect($this->generateUrl('fos_user_security_login'));
+            }
+
+        return $this->render('PBundle:Homepage:index.html.twig');
+    }
+    public function customLoginAction()
+    {
+        echo 1;
+        exit;
     }
 }
